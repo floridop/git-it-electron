@@ -82,6 +82,11 @@ $ npm run pack-lin
 
 This will output the contents of the application to a folder at `../out/Git-it-linux-x64`.
 ```bash
+$ npm run pack-lin32
+```
+
+This will output the contents of the application to a folder at `../out/Git-it-linux-ia32` (linux 32 bit).
+```bash
 $ npm run pack-win
 ```
 
