@@ -59,6 +59,11 @@
     <p><code class="shell">git config --global user.name "Your Name"</code></p>
     <p>Now set your email:</p>
     <p><code class="shell">git config --global user.email "youremail@example.com"</code></p>
+    <p>Note that the <code>--global</code> option will set up the information in your user's <code>~/.gitconfig</code> file.</p>
+    <p>The default behavior if you do not specify <code>--global</code> is <code>--local</code> which means these settings
+       will be copied locally in the repository's database, <code>.git/config</code></p>
+    <p>Everytime you login to the virtual machine, remember to check that the content of<code>git config -l</code>
+       is correct!</p>
 
     <p>You're done with your first challenge! Click the 'Verify' button to check the challenge.</p>
 </div>
