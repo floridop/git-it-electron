@@ -13,9 +13,12 @@
 
 <div class="chal-step blue-border border-box">
     <h3>Install Git</h3>
-    <p>We recommend installing Git on your computer by downloading the <a href="https://desktop.github.com">GitHub
-        Desktop</a> app. We'll not use the desktop app in Git-it (we're learning terminal!) but it includes Git and is
-        the easiest way to install Git on all platforms in the same way.</p>
+    <p>If you're attending the MNXB01 course at Lund University, git is already installed on Iridium.</p>
+    <p>If you are using your own computer, refer to the course slides for more info on how to install git.</p>
+    <p>The creators of this tutorial recommend installing Git on your computer by downloading the 
+        <a href="https://desktop.github.com">GitHub Desktop</a> app. We will NOT use the desktop app in Git-it 
+        (we're learning terminal!) but it includes Git and is
+        the easiest way to install Git on all platforms in the same way. I am not sure it will work on a cluster...</p>
 
     <ul>
         <li><strong>Windows</strong>: Use the <strong>Git Shell</strong> for your terminal.</li>
@@ -42,7 +45,7 @@
 
 <div class="chal-step blue-border border-box">
     <h3>Configure Git</h3>
-    <p>Once GitHub Desktop (and therefore Git) is installed, open your <strong>terminal</strong>.
+    <p>Once Git is installed (as it is on Iridium), open your <strong>terminal</strong>.
         You can verify that Git is really there by typing:</p>
 
     <p><code class="shell">git --version </code></p>
@@ -56,6 +59,10 @@
     <p><code class="shell">git config --global user.name "Your Name"</code></p>
     <p>Now set your email:</p>
     <p><code class="shell">git config --global user.email "youremail@example.com"</code></p>
+    <p>Note that the <code>--global</code> option will set up the information in your user's <code>~/.gitconfig</code> file.</p>
+    <p>The default behavior if you do not specify <code>--global</code> is <code>--local</code> which means these settings
+       will be copied locally in the repository's database, <code>.git/config</code></p>
+    <p>You can check your current configuration with<code>git config -l</code></p>
 
     <p>You're done with your first challenge! Click the 'Verify' button to check the challenge.</p>
 </div>
@@ -64,7 +71,7 @@
 
 <div class="chal-tip grey-border border-box">
     <h3>Dollar Signs in Code Documentation</h3>
-    <p>Dollar signs <code>$</code> are often used in programming documentation to signify that the line is <strong>command
+    <p>Dollar signs <code>$</code> are often used in programming documentation to represent the prompt, meaning that the line is <strong>command
         line</strong> code (see the code snippets above). You don't actually type the <code>$</code> in though, only
         type what comes after.</p>
 </div>
